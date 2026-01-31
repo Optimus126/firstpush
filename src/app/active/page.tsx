@@ -62,10 +62,18 @@ function ActiveGoalContent() {
           <div className="w-16"></div>
         </div>
 
+        {/* Day Counter */}
+        <div className="flex justify-center mb-6">
+          <div className="bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-full w-32 h-32 flex flex-col items-center justify-center shadow-lg shadow-emerald-500/20">
+            <div className="text-5xl font-bold text-white">{day}</div>
+            <div className="text-sm text-white/80 font-medium">{day === 1 ? "DAY" : "DAYS"}</div>
+          </div>
+        </div>
+
         {/* Goal Card */}
         <div className="bg-gradient-to-r from-emerald-500 to-cyan-500 p-[1px] rounded-2xl mb-8">
           <div className="bg-slate-900 rounded-2xl p-8 text-center">
-            <div className="text-5xl mb-4">🎯</div>
+            <div className="text-4xl mb-3">🎯</div>
             <h1 className="text-2xl font-bold text-white mb-2">{goalName}</h1>
             <p className="text-slate-400">Focus on this. Nothing else.</p>
           </div>
